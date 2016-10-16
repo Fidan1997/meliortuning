@@ -1,0 +1,85 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* layout */
+.wrapper {
+  max-width:980px;
+  margin: 20px auto;
+}
+
+/* gallery */
+.pict {
+   min-width: 25%;
+   min-height: 200px;
+   background: blue;
+   float:left;
+   /*display:inline-block;
+   vertical-align:top;
+   margin-right:-4px;*/
+   border: 1px solid #fff;
+}
+.p1,.p3,.p4,.p5,.p6,.p7,.p8,.p9,.p10,.p11,.p12{
+   background:url("../../14249072_938705962906748_1317325144_n.jpg");
+   background-size:100% 100%;
+   background-repeat: no-repeat;
+
+}
+.p2{
+   background:url("../../464b4a16ddb14ea5b041ef65861cb47b (1).jpg");
+   background-size:100% 100%;
+   background-repeat: no-repeat;
+
+}
+.p3{
+   background:url("../../69757e3ede82705855ca799eefe2b55e.jpg");
+   background-size:100% 100%;
+   background-repeat: no-repeat;
+
+}
+.p4{
+   background:url("../../1525336_784356981622683_9190149763098142650_n.jpg");
+   background-size:100% 100%;
+   background-repeat: no-repeat;
+
+}
+.p5{
+   background:url("../../car8.jpg");
+   background-size:100% 100%;
+   background-repeat: no-repeat;
+
+}
+.p6{
+   background:url("../../car8.jpg");
+   background-size:100% 100%;
+   background-repeat: no-repeat;
+
+}
+.line {
+   &:nth-child(even) {
+      .pict {
+         &:nth-child(odd) {
+           height:300px;
+           margin-top: -100px;
+         }
+         &:nth-child(even) {
+           background:red;
+         }
+      }
+   }
+   &:nth-child(odd) {
+      .pict {
+         &:nth-child(odd) {
+           
+         }
+         &:nth-child(even) {
+           height:300px;
+         }
+      }
+   }
+
+  
+
+}

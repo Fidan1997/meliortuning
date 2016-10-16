@@ -1,0 +1,93 @@
+*, *::before, *::after {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+.wrap {
+  
+  width: 1125px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.deck {
+  margin: 20px;
+  border: 1px solid black;
+  height: 202px;
+  width: 202px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: .3s;
+  cursor: pointer;
+  font-size: 50px;
+  line-height:200px;
+  text-align: center;
+  font-family: 'Londrina Shadow';
+}
+
+.deck a {
+  color: black;
+}
+ 
+.deck img {
+  height: 200px;
+  width: 200px;
+}
+
+.album {
+  border: 1px solid black;
+  height: 200px;
+  width: 200px;
+  float: left;
+  transition: .3s;
+  
+}
+
+#close {
+  
+  display: none;  
+  width: 1125px;
+  margin: 30px auto 0;
+}
+
+#close p {
+  cursor: pointer;
+  text-align: right;
+  margin: 0 20px 0;
+}
+
+#lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  z-index: 999;
+}
+
+#lightwrap {
+  
+  margin: 0 auto;
+  border: 5px solid black;
+  top: 15%;
+  display: table;
+}
+
+#lightwrap img {
+  display: table-cell;
+  max-width: 600px;
+}
+
+#x {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAMAAAC6CgRnAAAAPFBMVEX///8AAAD9/f2CgoKAgIAAAAAAAAAAAABLS0sAAAAAAACqqqqqqqq6urpKSkpISEgAAAC7u7u5ubn////zbsMcAAAAE3RSTlMASv6rqwAWS5YMC7/AyZWVFcrJCYaKfAAAAHhJREFUeF590kkOgCAQRFEaFVGc+/53FYmbz6JqBbyQMFSYuoQuV+iTflnstI7ssLXRvMWRaEMs84e2uVckuZe6knL0hiSPObXhj6ChzoEkIolIIpKIO4joICAIeDd7QGIfCCjOKe9HEk8mnxpIAup/F31RPZP9fAG3IAyBSJe0igAAAABJRU5ErkJggg==);
+  width: 27px;
+  height: 27px;
+  cursor: pointer;
+}
